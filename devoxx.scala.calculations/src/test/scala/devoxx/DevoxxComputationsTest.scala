@@ -6,7 +6,7 @@ import spire.implicits._
 import spire.math._
 import scala.math.ScalaNumber
 import org.junit.Assert._
-import devoxx.math.syntax.DoubleSyntax._
+import devoxx.math.syntax.DoubleSyntax.doubleToDoubleSyntax
 import devoxx.math.syntax.DoubleSyntax
 import org.scalatest.junit.MustMatchersForJUnit
 
@@ -72,7 +72,7 @@ class DevoxxComputationsTest extends JUnitSuite with MustMatchersForJUnit  {
    */
   @Test def testComplex {
 
-    val complex =  -1.0 + 1.0.i //Complex
+    val complex =  -1.0 + 1.0.i //Complex(1.0, 1.0)
     printNumber("1.0.i - 1.0", complex)
     assertEquals("Imaginary part", complex.imag , 1.0, 0.0)
     assertEquals("Imaginary part", complex.real , -1.0, 0.0)

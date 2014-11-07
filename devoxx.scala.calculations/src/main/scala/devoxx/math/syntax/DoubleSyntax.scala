@@ -19,7 +19,7 @@ final class DoubleSyntax(val value : Double) {
 }
 
 object DoubleSyntax {
-  implicit def doubleToDoubleConverter(value : Double) = new DoubleSyntax(value)
+  implicit def doubleToDoubleSyntax(value : Double) = new DoubleSyntax(value)
 }
 
 

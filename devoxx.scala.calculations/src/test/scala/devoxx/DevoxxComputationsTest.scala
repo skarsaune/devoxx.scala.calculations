@@ -6,8 +6,8 @@ import spire.implicits._
 import spire.math._
 import scala.math.ScalaNumber
 import org.junit.Assert._
-import devoxx.math.syntax.DoubleConverter._
-import devoxx.math.syntax.DoubleConverter
+import devoxx.math.syntax.DoubleSyntax._
+import devoxx.math.syntax.DoubleSyntax
 import org.scalatest.junit.MustMatchersForJUnit
 
 class DevoxxComputationsTest extends JUnitSuite with MustMatchersForJUnit  {
@@ -68,7 +68,7 @@ class DevoxxComputationsTest extends JUnitSuite with MustMatchersForJUnit  {
    }
 
   /**
-   * Test our custom complex syntax
+   * Test our custom syntax for complex numbers
    */
   @Test def testComplex {
 
